@@ -16,7 +16,7 @@ function get_weather_info($latitude, $longitude, $language)
     
     $ch       = curl_init();
 
-    curl_setopt($ch, CURLOPT_URL, "api.openweathermap.org/data/2.5/forecast?APPID=b2e172cc2f199a9497a76876ed678c36&lat=$latitude&lon=$longitude&lang=$language");
+    curl_setopt($ch, CURLOPT_URL, "api.openweathermap.org/data/2.5/forecast?APPID=APIKEY$latitude&lon=$longitude&lang=$language");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
